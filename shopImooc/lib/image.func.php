@@ -1,7 +1,6 @@
 <?php
 require_once 'string.func.php';
 function verifyImage($type = 1, $length = 4, $pixel = 0, $line = 0, $ses_name = "verify"){
-    session_start();
 // $length = 4;
 // $type = 1;
 // $pixel = 1;
@@ -22,9 +21,8 @@ function verifyImage($type = 1, $length = 4, $pixel = 0, $line = 0, $ses_name = 
         $x = 5 + $i*$size;
         $y = mt_rand(15,20);
         $color = imagecolorallocate($image, mt_rand(0,120), mt_rand(0,120), mt_rand(0,120));
-        $fontfile = "../fonts/".$fontfiles[mt_rand(0,count($fontfiles) - 1)];
+        $fontfile = "../fonts/".$fontfiles[mt_rand(0,count($fontfiles) - 1)];       // "../fonts/SIMYOU.TTF";// 
         $text = substr($chars, $i,1);
-//         echo "<br>".$size."<br>".$angle.$x.$y.$color.$fontfile.$text."<br>";
         imagettftext($image, $size, $angle, $x, $y, $color, $fontfile, $text);
         
     }

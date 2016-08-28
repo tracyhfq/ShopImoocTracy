@@ -1,0 +1,47 @@
+@import "globala.less";
+
+@topHeight:80px;
+@contentHeight:460px;
+@contentWidth:600px;
+@ordinColor:#666;
+@footerHeight:130px;
+
+.g-wrap{ min-height:@topHeight + @contentHeight + @footerHeight; overflow:hidden; }
+.top {position: relative; float: left;
+  width: 100%; height:@topHeight; min-width:@contentHeight; background-color: @globalcolor;
+  .logoframe { position: relative;
+    width: 500px; height: 100%; margin: 0 auto;
+    .u-icon{ position: relative; float: left;width: 30%; height: 100%;margin-left: 50px;margin-top: 10px;
+      background:url("../../images/admin/logo.jpg") no-repeat ;
+    }
+    .u-loginicon{position: relative; float: left;width: 50%; height: 100%;
+      font-size: 22px; line-height: @topHeight; font-family: Microsoft Yahei;color: white;
+    }
+  }
+
+}
+
+.g-content {position: relative; float:left; width: 100%;min-width: @contentWidth; min-height: @contentHeight;
+  .loginframe {
+    position: relative; width: 306px;height: 320px; margin: 10px auto; padding: 20px 76px;border: solid 1px #999;
+      .l-title{line-height: 20px; color: #666; font-size: 13px; margin-bottom: 5px;}
+      .l-input{margin-bottom: 10px;height: 32px; width: 100%; font-size: 12px; line-height: 24px;
+        input {height: 100%;width: 100% }
+      }
+    .login_btn{width: 100%;height: 32px;margin-top: 10px;border: none;
+      background: url("../../images/admin/icon/login_btn.jpg");
+    }
+  }
+}
+
+.g-bottom{position:absolute; bottom:50px;width: 100%;height: @footerHeight;min-width: 1000px; text-align: center; line-height: 24px; font-size: 12px;
+  a{
+    color: black;
+    &:hover{color:@globalcolor; }
+  }
+  .imgs{position: relative;width: 500px;height: 60px;margin: 10px auto;
+    .img1{position: relative; float: left;width: 100px;margin-left: 10px; height: 100%; background:url("../../images/admin/logo.jpg") no-repeat ;}
+  }
+
+
+}

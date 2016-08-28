@@ -1,3 +1,4 @@
 <?php
-require_once '../lib/image.func.php';
-verifyImage();
+require_once '../include.php';
+verifyImage(2,4,30,3,'verify');
+?>

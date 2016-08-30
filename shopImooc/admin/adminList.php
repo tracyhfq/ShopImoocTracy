@@ -3,7 +3,14 @@ require_once '../include.php';
 checkLogined();
 include 'top.php';
 include 'side.php';
-$rows = getAllAdmin();
+$pageSize = 2;
+$page= isset($_REQUEST['page'])?$_REQUEST['page']:1;
+$sql="select * from imooc_admin";
+$rows = getPageContent($pageSize,$page,$sql);
+// alertMsg($rows,'');
+// print_r($rows);
+// $rows = getAllAdmin();
+$pagehtml = showPage($page,getTotalPage($pageSize,$sql));
 if (!$rows) {
     alertMsg("请添加管理员", 'adminAdd.php');
 }
@@ -32,13 +39,14 @@ if (!$rows) {
 				<td><?php echo $row['id']; ?> </td>
 				<td><?php echo $row['username'] ;?> </td>
 				<td><?php echo $row['email']; ?> </td>
-				<td><input type="button" value="修改"/> <input type="button" value="删除"/></td>
+				<td><a class="adminChange" href="adminAdd.php?id=<?php echo $row['id']; ?>">修改</a> <a class="adminDelete" href="doAdminAction.php?act=adminDelete&id=<?php echo $row['id']; ?>">删除</a></td>
 				</tr>
 				<?php  $i++; endforeach;?>
 				</tbody>
 				
-<!-- 				<tr colnum="2"> <input type="button"/></tr> -->
 				</table>
+				<div class="f-fr"><?php echo $pagehtml;?></div>
+				
 			</div>
 		</div>
 	</div>

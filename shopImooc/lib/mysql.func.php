@@ -40,6 +40,7 @@ class Mysqli_Database {
      * @param unknown $where
      */
     function update($table,$array,$where = null) {
+        $str = "";
         foreach ($array as $key=>$val) {
             if ($str == null){
                 $sep="";
@@ -49,9 +50,9 @@ class Mysqli_Database {
             }
             $str.=$sep.$key."='".$val."'";
         }
-        $sql="update{$table}set{$str}".($where==null?null:" where ".$where);
+        $sql="update {$table} set {$str}".($where==null?null:" where ".$where);
         $this->connection->query($sql);
-        return mysqli_affected_rows();
+        return mysqli_affected_rows($this->connection);
     }
     
     /**
@@ -59,11 +60,11 @@ class Mysqli_Database {
      * @param unknown $table
      * @param unknown $where
      */
-    function  delete($table,$where=null) {
-        $where = $where==null?null:"where ".$where;
+    function  delete($table,$where=null) {        
+        $where = $where==null?null:" where ".$where;
         $sql="delete from {$table} {$where}";
-        $this->connection->query($sql);
-        return  mysqli_affected_rows();
+        $result = $this->connection->query($sql);
+        return  mysqli_affected_rows($this->connection);
     }
     
     /**
@@ -72,14 +73,14 @@ class Mysqli_Database {
      * @return unknown
      */
     function fetchOne($sql){
-        $result = $this->connection->query($sql);
+        $result = $this->connection->query($sql);        
         $row=mysqli_fetch_array($result);
         return $row;
     }
     
     function fetchAll($sql){
-        $result = $this->connection->query($sql);
-        while ($row = mysqli_fetch_array($result)){
+        $result = $this->connection->query($sql);        
+        while (@$row = mysqli_fetch_array($result)){
             $rows[]=$row;
         }
         return $rows;

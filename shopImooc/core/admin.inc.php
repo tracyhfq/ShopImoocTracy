@@ -42,10 +42,44 @@ function adminAdd() {
     }
 }
 
-function getAllAdmin(){
-    $sql="select * from imooc_admin";
+function adminDelete($id){
+    if(!$id) {
+        alertMsg("删除失败", '../admin/adminList.php');
+        return ;
+    }
+    $database = new Mysqli_Database;
+    if($database->delete("imooc_admin "," id = {$id}")){
+        alertMsg("删除成功", '../admin/adminList.php');
+    }
+}
+
+function getAllAdmin($where=null){    
+    $sql="select * from imooc_admin {$where}";
     $database = new Mysqli_Database;
     $rows = $database->fetchAll($sql);
     return $rows;
     
+}
+
+function getOneAdmin($where){
+    $sql="select * from imooc_admin". $where;
+    $database = new Mysqli_Database;
+    $rows = $database->fetchOne($sql);    
+    return $rows;
+}
+
+function adminUpdate($id){
+    $arr = $_POST;
+    $arrValues = array_values($arr);
+    foreach ($arrValues as $value) {
+        if($value =='') {
+            alertMsg("参数为空，请重新填写", '../admin/adminAdd.php');
+            return;
+        }
+    }
+    $arr['password'] =md5($arr['password']);
+    $database = new Mysqli_Database;
+    if($database->update("imooc_admin",$arr," id = {$id}")){
+        alertMsg("修改成功", '../admin/adminList.php');
+    }
 }

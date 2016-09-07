@@ -13,7 +13,7 @@ CREATE TABLE `imooc_admin`(
  DROP TABLE IF EXISTS `imooc_cate`; 
 CREATE TABLE `imooc_cate`(
 `id` smallint(5) unsigned auto_increment key,
-`cName` varchar(50) unique
+`cName` varchar(50) not null unique /* CHARACTER SET utf8 COLLATE utf8_general_ci */
 );
 
 /* 商品表 */

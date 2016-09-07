@@ -4,6 +4,17 @@ checkLogined();
 include 'top.php';
 include 'side.php';
 
+$pageSize = 2;
+$page= isset($_REQUEST['page'])?$_REQUEST['page']:1;
+$sql="select * from imooc_cate order by id asc";
+$rows = getPageContent($pageSize,$page,$sql);
+// alertMsg($rows,'');
+// print_r($rows);
+// $rows = getAllAdmin();
+$pagehtml = showPage($page,getTotalPage($pageSize,$sql));
+if (!$rows) {
+    alertMsg("请添加分类", 'categoryAdd.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -20,12 +31,23 @@ include 'side.php';
 			<div class="tablewrap">
 
 				<table>
+				<thead>
+				<tr><td>分类编号</td><td>分类名称</td><td>操作</td></tr>
+				</thead>
+				<?php foreach ($rows as $row):?>
 				<tr>
-				<th>分类名称</th>
-				<td><input type="text"/></td>
+				
+				<td><?php echo $row['id']?></td>
+				<td><?php echo $row['cName']?></td>
+				<td><a class="categoryChange" href="categoryAdd.php?id=<?php echo $row['id'];?>">修改</a>
+				   <a href="doAdminAction.php?act=cateDelete&id=<?php echo $row['id'];?>">删除</a></td>
 				</tr>
+				
+				<?php endforeach;?>
 <!-- 				<tr colnum="2"> <input type="button"/></tr> -->
 				</table>
+								<div class="f-fr"><?php echo $pagehtml;?></div>
+				
 			</div>
 		</div>
 	</div>

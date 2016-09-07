@@ -17,18 +17,17 @@ class Mysqli_Database {
         if($mysqli->connect_error) {
             throw new Exception('Connection Error: '.$mysqli->connect_error);
         }
+        $mysqli->query("SET NAMES utf8");
             return $mysqli;
     }
     
     
     function insert($table,$array) {
-        
         $keys = join(",", array_keys($array));
         
         $vals = "'".join("','",  array_values($array))."'";
         
         $sql = "insert {$table} ($keys) value ({$vals})";
-        
         if(is_object($this->connection)){
             $this->connection->query ($sql);
             return  mysqli_insert_id($this->connection);

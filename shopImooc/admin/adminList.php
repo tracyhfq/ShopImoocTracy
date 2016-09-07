@@ -39,7 +39,8 @@ if (!$rows) {
 				<td><?php echo $row['id']; ?> </td>
 				<td><?php echo $row['username'] ;?> </td>
 				<td><?php echo $row['email']; ?> </td>
-				<td><a class="adminChange" href="adminAdd.php?id=<?php echo $row['id']; ?>">修改</a> <a class="adminDelete" href="doAdminAction.php?act=adminDelete&id=<?php echo $row['id']; ?>">删除</a></td>
+				<td><a class="adminChange" href="adminAdd.php?id=<?php echo $row['id']; ?>">修改</a>
+				 <a class="adminDelete" href="doAdminAction.php?act=adminDelete&id=<?php echo $row['id']; ?>">删除</a></td>
 				</tr>
 				<?php  $i++; endforeach;?>
 				</tbody>

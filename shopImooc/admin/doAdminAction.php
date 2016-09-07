@@ -1,7 +1,8 @@
 <?php
 require_once '../include.php';
 $act=$_REQUEST['act'];
-$id=$_REQUEST['id'];
+
+$id=isset($_REQUEST['id'])?$_REQUEST['id']:"";
 if ($act == "logput"){
     logout();
 }
@@ -14,4 +15,13 @@ else if ($act == 'adminUpdate'){
 }
 else if($act == 'adminDelete') {
     adminDelete($id);
+}
+else if($act == 'cateAdd'){
+    cateAdd();
+}
+else if($act =="cateUpdate") {
+    cateUpdate($id);
+}
+else if ($act == "cateDelete"){
+    cateDelete($id);
 }

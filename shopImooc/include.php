@@ -10,4 +10,5 @@ require_once 'mysql.func.php';
 require_once 'image.func.php';
 require_once 'page.func.php';
 require_once 'admin.inc.php';
+require_once 'cate.inc.php';
 ?>

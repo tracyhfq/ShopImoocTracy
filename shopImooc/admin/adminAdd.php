@@ -1,9 +1,10 @@
 <?php
 require_once '../include.php';
+header("Content-type: text/html;charset=utf-8");
+
 checkLogined();
 include 'top.php';
 include 'side.php';
-$id = 0;
 $arr = $_GET;
 $id = 0;
 if (isset($_GET['id'])) {
@@ -16,7 +17,7 @@ if (isset($_GET['id'])) {
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 <title>慕课网电子商务</title>
 <link rel="stylesheet" type="text/css" href="../scripts/admin/index.css">
 </head>

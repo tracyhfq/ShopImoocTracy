@@ -15,3 +15,19 @@ function buildRandomString($type = 1, $length = 4){
     $chars = str_shuffle($chars);
     return  substr($chars, 0,$length);
 }
+
+/** 唯一名
+ * @return string
+ */
+function getUniName(){
+    return md5(uniqid(microtime(true),true));
+}
+
+/** 文件扩展名
+ * @param unknown $filename
+ * @return string
+ */
+function getExt($filename){
+    $tmp_name=explode('.',$filename);
+    return strtolower(end($tmp_name));
+}

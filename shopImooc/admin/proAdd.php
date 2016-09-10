@@ -26,10 +26,22 @@ include 'side.php';
 				<tr><th>商品图片</th> <td> 
 				<form action="doAdminAction.php?act=uploadImg" method="post" enctype="multipart/form-data">请选择上传文件
 				<input type="hidden" name="MAX_FILE_SIZE" value="1000000"/>
-				<input type="file" name="singleImg" accept="image/jpeg,image/jpg,image/png"/>
+				<input type="file" name="uploadImg" accept="image/jpeg,image/jpg,image/png"/>
 				<input type="submit" value="上传" />
 				</form>
 				</td></tr>
+				
+				<tr><th>商品各尺寸图片</th> <td> 
+				<form action="doAdminAction.php?act=uploadMultiImg" method="post" enctype="multipart/form-data">请选择上传文件
+				<input type="hidden" name="MAX_FILE_SIZE" value="1000000"/>
+<!-- 				<input type="file" name="multiImg" /> -->
+<!-- 				<input type="file" name="multiImg[]" /> -->
+				<input type="file" name="uploadImg[]" />
+				<input type="file" name="uploadImg[]" />
+				<input type="submit" value="上传多张" />
+				</form>
+				</td></tr>
+				
 				<tr >
 				<td colspan="2"><input type="button" value="添加"/></td>
 				 </tr>

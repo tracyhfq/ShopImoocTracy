@@ -25,9 +25,10 @@ if ($act == "logput") {
                     } else 
                         if ($act == "cateDelete") {
                             cateDelete($id);
-                        } 
-
-                        else 
+                        } else 
                             if ($act == "uploadImg") {
-                                uploadImg($_FILES['singleImg']);
-                            }
+                                uploadImg($_FILES);
+                            } else 
+                                if ($act == "uploadMultiImg") {
+                                    uploadImg($_FILES);
+                                }

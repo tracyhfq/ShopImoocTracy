@@ -24,6 +24,13 @@ function getOneCate($where){
     return $rows;
 }
 
+function getAllcate(){
+    $sql="select * from imooc_cate";
+    $database = new Mysqli_Database;
+    $rows = $database->fetchAll($sql);
+    return $rows;
+}
+
 function cateDelete($id){
     if(!$id) {
         alertMsg("删除失败", '../admin/cateList.php');

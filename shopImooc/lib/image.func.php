@@ -47,3 +47,52 @@ function verifyImage($type = 1, $length = 4, $pixel = 0, $line = 0, $ses_name = 
 }
 
 // verifyImage(2, 4, 20, 3,"verify");
+
+/**
+ *
+ * @param unknown $filename
+ *            带文件名
+ * @param unknown $destination
+ *            带文件名
+ * @param unknown $dst_w
+ * @param unknown $dst_h
+ * @param unknown $isReserved
+ * @return resource
+ */
+function thumb($filename = null, $destination = null, $dst_w, $dst_h, $isReserved = true, $scale = 0.5)
+{
+    if ($destination && ! file_exists(dirname($destination))) {
+        mkdir(dirname($destination), 0777, true);
+    }
+    $dirpath = realpath(dirname(getcwd()));
+    $dstFilename = $destination == null ? $dirpath . "/uploads/" . getUniName() . getExt($filename) : $destination;
+
+    list ($src_w, $src_h, $imagetype) = getimagesize($filename);
+    if (is_null($dst_w) || is_null($dst_h)) {
+        $dst_w = $src_w * $scale;
+        $dst_h = $dst_h * $scale;
+    }
+
+    $mime = image_type_to_mime_type($imagetype);
+    $createFun = str_replace("/", "createfrom", $mime);
+    $outFun = str_replace("/", null, $mime);
+
+    $src_image = $createFun($filename); // imagecreatefromjpeg($filename);
+    $dst_image = imagecreatetruecolor($dst_w, $dst_h);
+    imagecopyresampled($dst_image, $src_image, 0, 0, 0, 0, $dst_w, $dst_h, $src_w, $src_h);
+    $outFun($dst_image, $dstFilename);
+
+    if (! $isReserved) {
+        unlink($filename);
+    }
+    return $dstFilename;
+}
+
+function getResizedImg($imgname= "e9695a7d6051872966a290186656ab58.jpg",$size = 50){
+    $dirpath = realpath(dirname(getcwd()));
+    $filename = $dirpath . "/uploads/" . $imgname;
+    
+    $dst1 = $dirpath . "/uploads/image_".$size."/" . $imgname;    
+    $dstFilename = thumb($filename, $dst1, $size, $size);
+    return $dstFilename;   
+}

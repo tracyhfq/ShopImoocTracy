@@ -78,7 +78,7 @@ function uploadFile($fileinfo, $allowExt, $maxSize, $imgFlag)
             $destination = $path . "/" . getUniName() . "." . $imgExt;
             
             if (move_uploaded_file($tmp_name, $destination)) {
-                alertMsg("上传成功", '');
+//                 alertMsg("上传成功", '');
                 return;
             } else {
                 alertMsg("移动文件出错", '');

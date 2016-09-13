@@ -59,7 +59,7 @@ function verifyImage($type = 1, $length = 4, $pixel = 0, $line = 0, $ses_name = 
  * @param unknown $isReserved
  * @return resource
  */
-function thumb($filename = null, $destination = null, $dst_w, $dst_h, $isReserved = true, $scale = 0.5)
+function thumb($filename = null, $destination = null, $dst_w = null, $dst_h = null, $isReserved = true, $scale = 0.5)
 {
     if ($destination && ! file_exists(dirname($destination))) {
         mkdir(dirname($destination), 0777, true);
@@ -90,9 +90,11 @@ function thumb($filename = null, $destination = null, $dst_w, $dst_h, $isReserve
 
 function getResizedImg($imgname= "e9695a7d6051872966a290186656ab58.jpg",$size = 50){
     $dirpath = realpath(dirname(getcwd()));
-    $filename = $dirpath . "/uploads/" . $imgname;
+    $filename = $dirpath.$imgname;
     
-    $dst1 = $dirpath . "/uploads/image_".$size."/" . $imgname;    
+    $dstlocalpath = dirname($imgname);
+    $dstfile = basename($imgname);
+    $dst1 = $dirpath.$dstlocalpath."/image_".$size."/".$dstfile;   
     $dstFilename = thumb($filename, $dst1, $size, $size);
     return $dstFilename;   
 }

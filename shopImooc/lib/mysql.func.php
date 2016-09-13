@@ -33,6 +33,7 @@ class Mysqli_Database {
             return  mysqli_insert_id($this->connection);
         }
     }
+    
     /**
      * @param unknown $table
      * @param unknown $array

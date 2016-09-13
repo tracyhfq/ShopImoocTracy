@@ -28,7 +28,11 @@ if ($act == "logput") {
                         } else 
                             if ($act == "uploadImg") {
                                 uploadImg($_FILES);
-                            } else 
-                                if ($act == "uploadMultiImg") {
-                                    uploadImg($_FILES);
-                                }
+                            } 
+//                             else 
+//                                 if ($act == "uploadMultiImg") {
+//                                     uploadImg($_FILES);
+//                                 }
+                            else if ($act=="proAdd"){
+                                proAdd();
+                            }

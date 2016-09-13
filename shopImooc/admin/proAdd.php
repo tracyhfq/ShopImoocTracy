@@ -22,11 +22,11 @@ print_r($rows);
 		<div class="m-titlebar">&nbsp&nbsp添加商品</div>
 		<div class="m-table">
 			<div class="tablewrap">
-
+                <form action="doAdminAction.php?act=proAdd" method="post" enctype="multipart/form-data" >
 				<table>
 				<tr>
 				<th>商品名称</th>
-				<td><input type="text"/></td>
+				<td><input type="text" name="pName"/></td>
 				</tr>
 				<tr>
 				<th>商品分类</th>
@@ -44,19 +44,19 @@ print_r($rows);
 				</tr>
 				<tr>
 				<th>商品数量</th>
-				<td><input type="text" name="pSn" value="" /></td>
+				<td><input type="text" name="pNum" value="" /></td>
 				</tr>
 				<tr>
 				<th>商品市场价</th>
-				<td><input type="text" name="pSn" value="" /></td>
+				<td><input type="text" name="mPrice" value="" /></td>
 				</tr>
 				<tr>
 				<th>商品优惠价</th>
-				<td><input type="text" name="pSn" value="" /></td>
+				<td><input type="text" name="iPrice" value="" /></td>
 				</tr>
 				<tr>
 				<th>商品描述</th>
-				<td><input type="text" name="pSn" value="" /></td>
+				<td><input type="text" name="pDesc" value="" /></td>
 				</tr>
 <!-- 				<tr><th>商品图片</th> <td>  -->
 <!-- 				<form action="doAdminAction.php?act=uploadImg" method="post" enctype="multipart/form-data">请选择上传文件 -->
@@ -67,20 +67,21 @@ print_r($rows);
 <!-- 				</td></tr> -->
 				
 				<tr><th>商品各尺寸图片</th> <td> 
-				<form action="doAdminAction.php?act=uploadMultiImg" method="post" enctype="multipart/form-data">请选择上传文件
-				<input type="hidden" name="MAX_FILE_SIZE" value="1000000"/>
+				请选择上传文件
+<!-- 				<input type="hidden" name="MAX_FILE_SIZE" value="1000000"/> -->
 <!-- 				<input type="file" name="multiImg" /> -->
 <!-- 				<input type="file" name="multiImg[]" /> -->
 				<input type="file" name="uploadImg[]" />
 				<input type="file" name="uploadImg[]" />
-				<input type="submit" value="上传多张" />
-				</form>
+<!-- 				<input type="submit" value="上传多张" /> -->
 				</td></tr>
 				
 				<tr >
-				<td colspan="2"><input type="button" value="添加"/></td>
+				<td colspan="2"><input type="submit" value="添加"/></td>
 				 </tr>
 				</table>
+								</form>
+				
 			</div>
 		</div>
 	</div>

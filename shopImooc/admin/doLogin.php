@@ -12,8 +12,8 @@ if (strtolower($verify)  == strtolower($verify1) ) {
         $_SESSION['adminName'] = $res['username'];
         $_SESSION['adminId'] = $res['id'];
         if($autoFlag){
-//            setcookie("adminId",$res('id'), time()+7*24*3600);
-//            setcookie("adminName",$res('username'), time() +7*24*3600);
+           setcookie("adminId",$res['id'], time()+7*24*3600);
+           setcookie("adminName",$res['username'], time() +7*24*3600);
         }
         header("location:index.php");
     }

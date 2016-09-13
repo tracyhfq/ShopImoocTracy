@@ -2,12 +2,12 @@
 require_once '../lib/string.func.php';
 header("Content-type: text/html;charset=utf-8");
 
-function uploadImg($fileinfo)
+function uploadImg($localpath)
 {
-    $files = buildInfo($fileinfo);
-    $imgUrls = array();
+    $files = buildInfo();
+    $i = 0;
     foreach ($files as $file) {
-        $imgUrl = uploadFile($file, $allowExt = array(
+        $imgUrl = uploadFile($localpath, $file, $allowExt = array(
             "gif",
             "jpeg",
             "jpg",
@@ -16,13 +16,17 @@ function uploadImg($fileinfo)
         ), $maxSize = 1048576, $imgFlag = true);
         $imgUrls[] = $imgUrl;
     }
+    return $imgUrls;
 }
 
-function buildInfo($fileinfo)
+function buildInfo()
 {
+    $fileinfo = $_FILES;
+    if (! $fileinfo) {
+        return;
+    }
     $i = 0;
     foreach ($fileinfo as $v) {
-//         print_r($fileinfo);
         if (is_string($v['name'])) {
             $files[$i] = $v;
             $i ++;
@@ -40,7 +44,7 @@ function buildInfo($fileinfo)
     return $files;
 }
 
-function uploadFile($fileinfo, $allowExt, $maxSize, $imgFlag)
+function uploadFile($localPath, $fileinfo, $allowExt, $maxSize, $imgFlag)
 {
     $filename = $fileinfo['name'];
     $type = $fileinfo['type'];
@@ -71,15 +75,19 @@ function uploadFile($fileinfo, $allowExt, $maxSize, $imgFlag)
         }
         if (is_uploaded_file($tmp_name)) { // 是否通过http post 上传
             $dirpath = realpath(dirname(getcwd()));
-            $path = $dirpath . "/uploads";
+            
+            $path = $dirpath . "/" . $localPath;
             if (! file_exists($path)) {
                 mkdir($path, 0777, true);
             }
-            $destination = $path . "/" . getUniName() . "." . $imgExt;
+            $destination = getUniName() . "." . $imgExt;
             
-            if (move_uploaded_file($tmp_name, $destination)) {
-//                 alertMsg("上传成功", '');
-                return;
+            if (move_uploaded_file($tmp_name, $path . "/" . $destination)) {
+                
+                $fileinfo['name'] = "/" . $localPath . "/" . $destination;
+                unset($fileinfo['tmp_name'], $fileinfo['size'], $fileinfo['type']);
+                
+                return $fileinfo;
             } else {
                 alertMsg("移动文件出错", '');
             }
@@ -115,5 +123,4 @@ function uploadFile($fileinfo, $allowExt, $maxSize, $imgFlag)
         }
         alertMsg($msg, "");
     }
-    return $destination;
 }

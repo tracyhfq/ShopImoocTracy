@@ -4,6 +4,18 @@ checkLogined();
 include 'top.php';
 include 'side.php';
 
+
+
+$pageSize = 2;
+$page= isset($_REQUEST['page'])?$_REQUEST['page']:1;
+$sql="select * from imooc_pro";
+$rows = getPageContent($pageSize,$page,$sql);
+
+$pagehtml = showPage($page,getTotalPage($pageSize,$sql));
+if (!$rows) {
+    alertMsg("没有商品", 'proAdd.php');
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -20,12 +32,39 @@ include 'side.php';
 			<div class="tablewrap">
 
 				<table>
+				<thead><tr>
+								<td>商品编号</td>
+				<td>商品名称</td>
+				<td>商品分类</td>
+				<td>是否上架</td>
+				<td>上架时间</td>
+<!-- 				<td>商品货号</td> -->
+<!-- 				<td>商品数量</td> -->
+<!-- 				<td>商品市场价</td> -->
+				<td>商品优惠价</td>
+<!-- 				<td>商品描述</td> -->
+<td>操作</td>
+
+				</tr></thead>
+				<?php foreach ($rows as $row):?>
 				<tr>
-				<th>商品名称</th>
-				<td><input type="text"/></td>
+				<td><?php echo $row['id']?></td>
+				<td><?php echo $row['pName']?></td>
+				<td><?php echo $row['cId']?></td>
+				<td><?php echo $row['isShow']?></td>
+				<td><?php echo $row['pubTime']?></td>
+				<td><?php echo $row['iPrice']?></td>
+				<td>
+				<a href="proDetail.php?id=<?php echo $row['id']?>">详情</a>
+				<a href="proAdd.php?id=<?php echo $row['id']?>">修改</a>
+				<a href="doAdminAction.php?act='proDelete'&id=<?php echo $row['id']?>" >删除</a>
+				</td>
 				</tr>
+				<?php endforeach;?>
 <!-- 				<tr colnum="2"> <input type="button"/></tr> -->
 				</table>
+								<div class="f-fr"><?php echo $pagehtml;?></div>
+				
 			</div>
 		</div>
 	</div>

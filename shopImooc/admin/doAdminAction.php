@@ -36,3 +36,9 @@ if ($act == "logput") {
                             else if ($act=="proAdd"){
                                 proAdd();
                             }
+                            else if ($act=="proDelete"){
+                                proDelete($id);
+                            }
+                            else if ($act=="proUpdate") {
+                                proUpdate($id);
+                            }

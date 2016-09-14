@@ -7,6 +7,9 @@ function uploadImg($localpath)
     $files = buildInfo();
     $i = 0;
     foreach ($files as $file) {
+        if (!$file['name']){
+            return ;
+        }
         $imgUrl = uploadFile($localpath, $file, $allowExt = array(
             "gif",
             "jpeg",

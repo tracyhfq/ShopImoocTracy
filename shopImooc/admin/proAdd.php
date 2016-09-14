@@ -24,7 +24,7 @@ if (isset($_GET['id'])) {
 </head>
 <body>
 	<div class="subContent">
-		<div class="m-titlebar">&nbsp&nbsp<?php if ($id) echo  "添加商品"; else  echo "编辑商品";?> </div>
+		<div class="m-titlebar">&nbsp&nbsp<?php if ($id) echo  "修改商品"; else  echo "添加商品";?> </div>
 		<div class="m-table">
 			<div class="tablewrap">
                 <form action= 'doAdminAction.php?<?php if (!$id) echo "act=proAdd"; else echo "act=proUpdate&id={$id}" ?>' method="post" enctype="multipart/form-data" onsubmit="return checkSubmit(this)" >
@@ -82,7 +82,7 @@ if (isset($_GET['id'])) {
 				</td></tr>
 				
 				<tr >
-				<td colspan="2"><input type="submit" value=" <?php if ($id) echo "添加"; else echo "修改";?> "/></td>
+				<td colspan="2"><input type="submit" value=" <?php if ($id) echo "修改"; else echo "添加";?> "/></td>
 				 </tr>
 				</table>
 								</form>

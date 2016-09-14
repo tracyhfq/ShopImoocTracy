@@ -92,9 +92,8 @@ function getResizedImg($imgname= "e9695a7d6051872966a290186656ab58.jpg",$size = 
     $dirpath = realpath(dirname(getcwd()));
     $filename = $dirpath.$imgname;
     
-    $dstlocalpath = dirname($imgname);
     $dstfile = basename($imgname);
-    $dst1 = $dirpath.$dstlocalpath."/image_".$size."/".$dstfile;   
+    $dst1 = $dirpath."/image_".$size."/".$dstfile;   
     $dstFilename = thumb($filename, $dst1, $size, $size);
     return $dstFilename;   
 }

@@ -57,7 +57,7 @@ if (!$rows) {
 				<td>
 				<a href="proDetail.php?id=<?php echo $row['id']?>">详情</a>
 				<a href="proAdd.php?id=<?php echo $row['id']?>">修改</a>
-				<a href="doAdminAction.php?act='proDelete'&id=<?php echo $row['id']?>" >删除</a>
+				<a href="doAdminAction.php?act=proDelete&id=<?php echo $row['id']?>" >删除</a>
 				</td>
 				</tr>
 				<?php endforeach;?>

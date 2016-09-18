@@ -4,14 +4,15 @@ checkLogined();
 include 'top.php';
 include 'side.php';
 
-
+$keywords=$_REQUEST['keywords']?$_REQUEST['keywords']:null;
+$where = $keywords?" where pName like '%{$keywords}%' ":null;
 
 $pageSize = 2;
 $page= isset($_REQUEST['page'])?$_REQUEST['page']:1;
-$sql="select * from imooc_pro";
+$sql="select * from imooc_pro".$where;
 $rows = getPageContent($pageSize,$page,$sql);
 
-$pagehtml = showPage($page,getTotalPage($pageSize,$sql));
+$pagehtml = showPage($page,getTotalPage($pageSize,$sql),"keywords={$keywords}");
 if (!$rows) {
     alertMsg("没有商品", 'proAdd.php');
 }
@@ -29,6 +30,13 @@ if (!$rows) {
 	<div class="subContent">
 		<div class="m-titlebar">&nbsp&nbsp商品列表</div>
 		<div class="m-table">
+				<div class=" m-choosebar">
+				<div class="f-fr"><span>搜索 &nbsp</span>
+						<input type="text" placeholder="请输入商品名称" class="j-search" onkeypress="search()"></div>
+				
+				
+		</div>
+		
 			<div class="tablewrap">
 
 				<table>
@@ -75,5 +83,14 @@ if (!$rows) {
 <script type="text/javascript">
 $('span.menuPro').html('-');
 $('dl.menuPro').css('display','block');
+
+
+function search(){
+    if (event.keyCode==13){
+        var val=$('.j-search').val();
+        window.location="proList.php?keywords="+val;
+        
+    }
+}
 </script>
 </html>

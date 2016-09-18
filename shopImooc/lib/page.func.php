@@ -34,7 +34,7 @@ function getPageContent($pageSize=1,$page=1,$sql){
 //        print_r($rows);
     
        function showPage($page=1,$totalPage=1,$where=null){
-           $where==null?null:"&".$where;
+           $where = $where==null?null:"&".$where;
            $database = new Mysqli_Database;
             
            $url = $_SERVER['PHP_SELF'];

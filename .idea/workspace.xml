@@ -2,12 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ac243af-aa1f-4ae1-9af2-9346d1423675" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shopImooc/less/admin/admin.less" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_220/0e6d5f178c2924e5e2bb8313d3f4d01d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_220/2863d7b3cd5104ca2ae09f7cf0b9218e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_220/4b28b323ea06d398fd36487759c536db.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_220/7a90870cf2919c84ecbcf6c061c4ad4b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_220/8bac3f29ece7ec2f579889fca5fe4679.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_220/a6a17b2cc8911cd285533488e8677b0e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_220/c1e47a4d7a8d5db591ea60ad30388486.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_220/fb7ff841a48a031d37a9002800baaec9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_350/0e6d5f178c2924e5e2bb8313d3f4d01d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_350/2863d7b3cd5104ca2ae09f7cf0b9218e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_350/4b28b323ea06d398fd36487759c536db.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_350/7a90870cf2919c84ecbcf6c061c4ad4b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_350/8bac3f29ece7ec2f579889fca5fe4679.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_350/a6a17b2cc8911cd285533488e8677b0e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_350/c1e47a4d7a8d5db591ea60ad30388486.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_350/fb7ff841a48a031d37a9002800baaec9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_50/0e6d5f178c2924e5e2bb8313d3f4d01d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_50/2863d7b3cd5104ca2ae09f7cf0b9218e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_50/4b28b323ea06d398fd36487759c536db.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_50/7a90870cf2919c84ecbcf6c061c4ad4b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_50/8bac3f29ece7ec2f579889fca5fe4679.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_50/a6a17b2cc8911cd285533488e8677b0e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_50/c1e47a4d7a8d5db591ea60ad30388486.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/image_50/fb7ff841a48a031d37a9002800baaec9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/uploads/0e6d5f178c2924e5e2bb8313d3f4d01d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/uploads/2863d7b3cd5104ca2ae09f7cf0b9218e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/uploads/4b28b323ea06d398fd36487759c536db.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/uploads/7a90870cf2919c84ecbcf6c061c4ad4b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/uploads/8bac3f29ece7ec2f579889fca5fe4679.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/uploads/a6a17b2cc8911cd285533488e8677b0e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/uploads/c1e47a4d7a8d5db591ea60ad30388486.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shopImooc/uploads/fb7ff841a48a031d37a9002800baaec9.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopImooc/admin/adminAdd.php" afterPath="$PROJECT_DIR$/shopImooc/admin/adminAdd.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopImooc/admin/adminList.php" afterPath="$PROJECT_DIR$/shopImooc/admin/adminList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopImooc/admin/doAdminAction.php" afterPath="$PROJECT_DIR$/shopImooc/admin/doAdminAction.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopImooc/core/admin.inc.php" afterPath="$PROJECT_DIR$/shopImooc/core/admin.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopImooc/lib/mysql.func.php" afterPath="$PROJECT_DIR$/shopImooc/lib/mysql.func.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopImooc/admin/categoryList.php" afterPath="$PROJECT_DIR$/shopImooc/admin/categoryList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopImooc/admin/proList.php" afterPath="$PROJECT_DIR$/shopImooc/admin/proList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopImooc/less/admin/globala.less" afterPath="$PROJECT_DIR$/shopImooc/less/admin/globala.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopImooc/less/admin/index.less" afterPath="$PROJECT_DIR$/shopImooc/less/admin/index.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopImooc/scripts/admin/globala.css" afterPath="$PROJECT_DIR$/shopImooc/scripts/admin/globala.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopImooc/scripts/admin/index.css" afterPath="$PROJECT_DIR$/shopImooc/scripts/admin/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopImooc/scripts/admin/login.css" afterPath="$PROJECT_DIR$/shopImooc/scripts/admin/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopImooc/scripts/admin/side.css" afterPath="$PROJECT_DIR$/shopImooc/scripts/admin/side.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopImooc/scripts/admin/top.css" afterPath="$PROJECT_DIR$/shopImooc/scripts/admin/top.css" />
     </list>
     <ignored path="ShopImooc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,8 +79,8 @@
       <file leaf-file-name="globala.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shopImooc/less/admin/globala.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+            <state relative-caret-position="285">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -51,8 +89,28 @@
       <file leaf-file-name="index.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shopImooc/less/admin/index.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="81" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
+            <state relative-caret-position="105">
+              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="proList.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shopImooc/admin/proList.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopImooc/less/admin/admin.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -63,16 +121,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
               <caret line="25" column="113" selection-start-line="25" selection-start-column="113" selection-end-line="25" selection-end-column="113" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="side.less" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shopImooc/less/admin/side.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -98,10 +146,11 @@
         <option value="$PROJECT_DIR$/shopImooc/scripts/admin/index.less" />
         <option value="$PROJECT_DIR$/shopImooc/admin/index.php" />
         <option value="$PROJECT_DIR$/shopImooc/less/admin/top.less" />
-        <option value="$PROJECT_DIR$/shopImooc/less/admin/index.less" />
-        <option value="$PROJECT_DIR$/shopImooc/less/admin/globala.less" />
         <option value="$PROJECT_DIR$/shopImooc/admin/side.php" />
         <option value="$PROJECT_DIR$/shopImooc/less/admin/side.less" />
+        <option value="$PROJECT_DIR$/shopImooc/less/admin/admin.less" />
+        <option value="$PROJECT_DIR$/shopImooc/less/admin/globala.less" />
+        <option value="$PROJECT_DIR$/shopImooc/less/admin/index.less" />
       </list>
     </option>
   </component>
@@ -111,10 +160,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="274" />
     <option name="y" value="23" />
-    <option name="width" value="1166" />
-    <option name="height" value="767" />
+    <option name="width" value="1440" />
+    <option name="height" value="808" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -141,8 +189,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -347,6 +395,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -357,6 +406,9 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
@@ -387,6 +439,26 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -403,19 +475,20 @@
       <updated>1471570829149</updated>
       <workItem from="1472349196666" duration="1917000" />
       <workItem from="1472518289925" duration="151000" />
+      <workItem from="1474163652136" duration="2185000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2068000" />
+    <option name="totallyTimeSpent" value="4253000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="274" y="23" width="1166" height="767" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1440" height="808" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3091703" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -448,14 +521,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shopImooc/less/admin/top.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shopImooc/less/admin/globala.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -748,18 +813,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopImooc/less/admin/index.less">
+    <entry file="file://$PROJECT_DIR$/shopImooc/admin/side.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="81" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
-          <folding />
+        <state relative-caret-position="617">
+          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopImooc/less/admin/globala.less">
+    <entry file="file://$PROJECT_DIR$/shopImooc/less/admin/side.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        <state relative-caret-position="180">
+          <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -772,17 +836,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopImooc/admin/side.php">
+    <entry file="file://$PROJECT_DIR$/shopImooc/less/admin/admin.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopImooc/less/admin/side.less">
+    <entry file="file://$PROJECT_DIR$/shopImooc/less/admin/globala.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
+        <state relative-caret-position="285">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopImooc/less/admin/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopImooc/admin/proList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

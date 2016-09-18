@@ -22,7 +22,7 @@ if (!$rows) {
 <head>
 <meta charset="UTF-8">
 <title>慕课网电子商务</title>
-<link rel="stylesheet" type="text/css" href="../scripts/admin/index.css">
+<link rel="stylesheet" type="text/css" href="../scripts/admin/admin.css">
 </head>
 <body>
 	<div class="subContent">

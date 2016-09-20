@@ -38,13 +38,13 @@
 						<a href="#">订单修改</a>
 					</dd>
 				</dl></li>
-			<li><a class="menu" id ="menuBuyer" href="#"><span class="menuBuyer">+</span>用户管理</a>
-				<dl class="menuBuyer" style="display:none">
+			<li><a class="menu" id ="menuUser" href="#"><span class="menuUser">+</span>用户管理</a>
+				<dl class="menuUser" style="display:none">
 					<dd>
-						<a href="#">添加用户</a>
+						<a href="userAdd.php">添加用户</a>
 					</dd>
 					<dd>
-						<a href="#">用户列表</a>
+						<a href="userList.php">用户列表</a>
 					</dd>
 				</dl></li>
 			<li><a class="menu" id="menuAdmin" href="#"><span class="menuAdmin">+</span>管理员管理</a>

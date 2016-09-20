@@ -25,10 +25,11 @@ if ($act == "logput") {
                     } else 
                         if ($act == "cateDelete") {
                             cateDelete($id);
-                        } else 
-                            if ($act == "uploadImg") {
-                                uploadImg($_FILES);
-                            } 
+                        } 
+//                         else 
+//                             if ($act == "uploadImg") {
+//                                 uploadImg($_FILES);
+//                             } 
 //                             else 
 //                                 if ($act == "uploadMultiImg") {
 //                                     uploadImg($_FILES);
@@ -41,4 +42,13 @@ if ($act == "logput") {
                             }
                             else if ($act=="proUpdate") {
                                 proUpdate($id);
+                            }
+                            else if ($act =="userDelete") {
+                                userDelete($id);
+                            }
+                            else if ($act == "userAdd") {
+                                userAdd();
+                            }
+                            else if($act =="userUpdate") {
+                                userUpdate($id);
                             }

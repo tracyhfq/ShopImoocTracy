@@ -1,5 +1,5 @@
 <?php
-function alertMsg($msg,$url){
+function alertMsg($msg,$url=null){
     echo "<script>alert('{$msg}');</script>";
     if ($url){
     echo "<script>window.location='{$url}';</script>";
